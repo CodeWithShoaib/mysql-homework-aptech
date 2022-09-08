@@ -1,0 +1,17 @@
+SQL:-stand for standard query language
+DDL:-Data Definition language(use to craete the stucture of objects database)
+DML:-Data manipulartion language
+
+DDL Commands:-
+craete
+Drop
+Alter
+Truncate
+
+DML Commands:-
+Insert 
+update 
+Delete
+
+
+
