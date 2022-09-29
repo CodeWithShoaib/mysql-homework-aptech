@@ -32,3 +32,45 @@ new verify that  we want to retrive excat data with relationship
 SELECT * FROM member,duty,department  WHERE member.mem_id=duty.T_id=department.dept_id;
 
 	
+
+
+
+
+
+
+
+
+CREATE DATABASE LaptopMarket
+
+CREATE TABLE Shop (
+id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+shopname VARCHAR(30) NOT NULL,
+Stocks int
+)
+
+INSERT INTO `shop`(`shopname`, `Stocks`) VALUES ('Dellshop',2),('Lenovoshop',200),('hpShop',5000)
+
+now i want to create store procedure to show data where stocks==200
+
+DELIMITER //
+CREATE PROCEDURE selectdata ()
+BEGIN
+SELECT  shopname
+FROM shop
+WHERE Stocks = 200;
+END //
+DELIMITER ;
+
+now i want to update and delete in one fu
+
+
+DELIMITER //
+CREATE PROCEDURE updatedata()
+BEGIN
+UPDATE `shop` SET `shopname`='Appleshop' WHERE id=3;
+SELECT * FROM shop;
+
+
+END //
+DELIMITER ;
+
